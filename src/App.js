@@ -27,11 +27,11 @@ class App extends React.Component {
     e.preventDefault();
 
     const city = e.target.elements.city.value;
+    var error_message = "";
     const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
     const data = await api_call.json();
 
-    if (data.cod !== "404") {
-      console.log(data)
+    if (data.cod === 200) {
       this.setState({
         temperature: data.main.temp,
         city: data.name,
@@ -46,6 +46,14 @@ class App extends React.Component {
       });
     }
     else {
+
+      if (data.cod === "404") {
+        error_message = "Sorry location not found"
+      }
+      else if (data.cod === "400") {
+        error_message = "Please enter a location"
+      }
+
       this.setState({
         temperature: undefined,
         city: undefined,
@@ -56,7 +64,7 @@ class App extends React.Component {
         max_temp: undefined,
         description: undefined,
         wind: undefined,
-        error: "Please enter a valid location"
+        error: error_message
       });
     }
 
@@ -85,7 +93,12 @@ class App extends React.Component {
             wind={this.state.wind}
             error={this.state.error} />
 
+          <footer className="footer-text">
+            <p> The app only supports the cities provided by the openweathermap api. </p>
+          </footer>
+
         </div>
+
       </div>
     );
   }

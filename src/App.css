@@ -15,7 +15,7 @@ button {
   letter-spacing: 1px;
   font-size: 20px;
   cursor: pointer;
-  background-color: #f16051;
+  background-color: #636f83;
   color: #fff;
   font-weight: 200;
 }
@@ -46,17 +46,8 @@ button:active {
   margin: 5px;
 }
 
-.weather-container{
-  margin-left: 20px;
-}
-
-.extra-info{
+.weather-info{
   padding: 1%;
-}
-
-.main-info{
-  padding: 1%;
-  
 }
 
 .weather-parameter{
@@ -77,4 +68,19 @@ button:active {
 
 .weather-temperature-title{
   font-size: 4rem;
+}
+
+.error-text{
+  padding : 1%;
+  font-size: 1.4rem;
+  color: red;
+  font-weight: 500;
+}
+
+.footer-text{
+  position: relative;
+  margin-top: 10%;
+  text-align: left;
+  
+  font-size: 0.7rem;
 }
