@@ -94,7 +94,7 @@ class App extends React.Component {
             error={this.state.error} />
 
           <footer className="footer-text">
-            <p> The app only supports the cities provided by the openweathermap api. </p>
+            <p> The app works on the data provided by the openweathermap api. </p>
           </footer>
 
         </div>
