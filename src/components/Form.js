@@ -5,9 +5,7 @@ const Form = props => {
         <div className="form-container">
             <div style={{textAlign :"center"}}>
                 <form onSubmit={props.getWeather} id="weatherForm">
-                    <input className="form_element" type="text" name="city" placeholder="City..." />
-
-                    <input className="form_element" type="text" name="country" placeholder="Country Code..." />
+                    <input className="form_element" type="text" name="city" placeholder="Enter City..." />
 
                     <button className="form_element" type="submit" form="weatherForm" value="Submit">Get Weather</button>
                 </form>
