@@ -33,13 +33,13 @@ class App extends React.Component {
 
     if (data.cod === 200) {
       this.setState({
-        temperature: data.main.temp,
+        temperature: Math.round(data.main.temp),
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
-        feels_like: data.main.feels_like,
-        min_temp: data.main.temp_max,
-        max_temp: data.main.temp_min,
+        feels_like: Math.round(data.main.feels_like),
+        min_temp: Math.round(data.main.temp_max),
+        max_temp: Math.round(data.main.temp_min),
         wind: data.wind.speed,
         description: data.weather[0].description,
         error: ""
