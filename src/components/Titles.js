@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 class Titles extends Component {
     render() {
         return (
-            <div>
-                <h1> Whats the weather ?</h1>
-                <p>Find out the weather temperature, conditions and more...</p>
+            <div className="title">
+                <h1> What's the weather like?</h1>
+                <p>Find out the temperature, forecast and more...</p>
             </div>
         )
     }

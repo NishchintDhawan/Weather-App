@@ -1,22 +1,80 @@
-.App {
+.App{
+  background-color:#636f83!important;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: Bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #f16051;
+  color: #fff;
+  font-weight: 200;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:active {
+  outline: none;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.form-container {
+  /*background-color: #2c3e50;*/
+  padding: 10px;
+}
+
+/* Style the container */
+.container {
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  background-color: #d0d1d6;
+  padding: 20px;
+}
+
+.form_element{
+  padding: 10px 10px;  
+  margin: 5px;
+}
+
+.weather-container{
+  margin-left: 20px;
+}
+
+.extra-info{
+  padding: 1%;
+}
+
+.main-info{
+  padding: 1%;
+  
+}
+
+.weather-parameter{
+  font-size: 1rem;
+}
+
+.weather-parameter-caption {
+  color: #f16051;
+}
+
+.weather-feels-like{
+  font-size: 1rem;
+}
+
+.weather-location-title{
+  font-size: 1.3rem;
+}
+
+.weather-temperature-title{
+  font-size: 4rem;
 }
